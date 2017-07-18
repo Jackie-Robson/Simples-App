@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./app/components/form/components/index.js?7a43"],"names":["NewTask"],"mappings":";;;;;;;;;;;;;AAAA;;;;;;QAGCA,O","file":"0.a47c6d4834a5384ab8e1.hot-update.js","sourcesContent":["import NewTask from './NewTask'\n\nexport {\n\tNewTask\n}\n\n\n\n// WEBPACK FOOTER //\n// ./app/components/form/components/index.js"],"sourceRoot":""}

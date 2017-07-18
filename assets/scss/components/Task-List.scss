@@ -1,0 +1,58 @@
+#displayTasks{
+
+	display: inline-flex;
+	order:1;
+
+	#TaskHead{
+		margin: 30px;
+		font-size: 24px;
+		color: black;
+	}
+
+	margin-left: 100px;
+	width:20%;
+
+	@media screen and (max-width: 450px){
+		margin: 10px;
+		width: 100%;
+	}
+	li{
+			ul{
+				display: block;
+
+				li{
+					display: inline-block;
+					margin: 0;
+				}
+			}
+		align-items: center;
+
+		p{
+			display: inline-flex;
+			max-width: 90%;
+			word-wrap: break-word;
+			order:2;
+			margin-bottom: 10px;
+		}
+
+
+
+		input{
+			order : 1;
+			display: inline-flex;
+			vertical-align: middle;
+			margin-right: 10px
+		}
+
+
+
+	}
+}
+
+.strike{
+	form{
+		text-decoration: none;
+	}
+	opacity: .5;
+	text-decoration: line-through;
+}

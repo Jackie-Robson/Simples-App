@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.25rem 0;
+  color: grey;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  font-style: normal; }
+  h1 i, h2 i, h3 i, h4 i, h5 i, h6 i {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: normal;
+    font-style: italic; }
+
+h1,
+.h1 {
+  font-size: 48px; }
+  h1 i,
+  .h1 i {
+    font-size: 36px; }
+
+h2,
+.h2 {
+  font-size: 36px; }
+  h2 i,
+  .h2 i {
+    font-size: 24px; }
+
+h3,
+.h3 {
+  font-size: 24px; }
+  h3 i,
+  .h3 i {
+    font-size: 20px; }
+
+h4,
+.h4 {
+  font-size: 20px; }
+  h4 i,
+  .h4 i {
+    font-size: 18px; }
+
+h5,
+.h5 {
+  font-size: 18px; }
+  h5 i,
+  .h5 i {
+    font-size: 16px; }
+
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .15rem; }
+  h6 i,
+  .h6 i {
+    font-size: 16px; }
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  color: grey;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0 0 1.25rem 0; }
+  p em {
+    font-weight: bold;
+    font-style: italic;
+    line-height: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+header {
+  width: 100%; }
+
+#app {
+  max-width: 1920px;
+  margin: 0px auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; }
+  #app #container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  #app body {
+    background-color: white;
+    -webkit-font-smoothing: antialiased; }
+  #app .hide {
+    opacity: 0;
+    left: -300; }
+
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 10px 100px 5px 100px; }
+  header nav {
+    width: 100%; }
+    header nav li {
+      display: block;
+      cursor: pointer;
+      font-size: 20px; }
+  header h1 {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: black; }
+  header hr {
+    margin-bottom: 0; }
+
+#newTaskForm {
+  order: 2;
+  width: 40%;
+  display: inline-flex; }
+  #newTaskForm form {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: inline-flex; }
+    #newTaskForm form label {
+      width: auto;
+      padding: 10px;
+      margin: 10px 0;
+      font-family: "PT Sans Narrow", sans-serif;
+      font-size: 24px;
+      font-weight: 300; }
+    #newTaskForm form textarea {
+      margin: 30px 0 0 0;
+      resize: none;
+      width: 400px;
+      height: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      outline: none;
+      font-size: 18px; }
+      @media screen and (max-width: 450px) {
+        #newTaskForm form textarea {
+          width: 300px; } }
+    #newTaskForm form #tagButton {
+      height: 35px;
+      width: 35px;
+      font-size: 20px;
+      padding: 1px 1px;
+      display: absolute;
+      outline-radius: 5px; }
+    #newTaskForm form button {
+      display: block;
+      order: 4;
+      margin: 30px 0;
+      padding: 5px;
+      height: 35px;
+      width: auto;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.02);
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.1); }
+
+#tags {
+  position: relative;
+  z-index: 3;
+  top: -240px;
+  left: 120px;
+  margin: 0;
+  padding: 0;
+  order: 2;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+  border-radius: 5px;
+  box-shadow: none; }
+  #tags ul {
+    display: absolute;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll; }
+    #tags ul li:nth-child(odd) {
+      background: rgba(0, 0, 0, 0.05); }
+    #tags ul li {
+      display: block;
+      width: 100%;
+      padding: 5px 10px; }
+      #tags ul li div {
+        display: inline-block;
+        text-transform: uppercase;
+        height: 30px;
+        padding: 5px 5px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid grey;
+        outline: none;
+        font-size: 12px;
+        color: grey; }
+        #tags ul li div div:nth-child(even) {
+          background-color: white; }
+        #tags ul li div button {
+          vertical-align: middle;
+          margin-bottom: 3px;
+          height: 12px;
+          width: 12px;
+          border-radius: 3px;
+          font-size: 8px;
+          font-weight: 400;
+          align-content: center;
+          padding: 0;
+          border: 1px solid black;
+          background-color: initial;
+          background-color: rgba(225, 0, 0, 0.6); }
+  #tags form {
+    display: flex;
+    align-content: center;
+    position: relative;
+    bottom: -5px;
+    margin-bottom: 0;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    box-shadow: none; }
+    #tags form input {
+      display: inline-flex;
+      margin: 3px auto 0 auto;
+      width: 90%;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 100;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.1); }
+
+#displayTasks {
+  display: inline-flex;
+  order: 1;
+  margin-left: 100px;
+  width: 20%; }
+  #displayTasks #TaskHead {
+    margin: 30px;
+    font-size: 24px;
+    color: black; }
+  @media screen and (max-width: 450px) {
+    #displayTasks {
+      margin: 10px;
+      width: 100%; } }
+  #displayTasks li {
+    align-items: center; }
+    #displayTasks li ul {
+      display: block; }
+      #displayTasks li ul li {
+        display: inline-block;
+        margin: 0; }
+    #displayTasks li p {
+      display: inline-flex;
+      max-width: 90%;
+      word-wrap: break-word;
+      order: 2;
+      margin-bottom: 10px; }
+    #displayTasks li input {
+      order: 1;
+      display: inline-flex;
+      vertical-align: middle;
+      margin-right: 10px; }
+
+.strike {
+  opacity: .5;
+  text-decoration: line-through; }
+  .strike form {
+    text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map*/

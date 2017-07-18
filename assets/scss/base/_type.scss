@@ -1,0 +1,98 @@
+$font-family-sans : 'PT Sans Narrow', sans-serif;
+
+// Sizes
+$font-size: 20px;
+$font-color: grey;
+$font-margin: 0 0 1.25rem 0;
+
+// Headings
+$h1-font-size: 48px;
+$h2-font-size: 36px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 16px;
+
+// Typography
+h1,h2,h3,h4,h5,h6 {
+  margin: $font-margin;
+  color: $font-color;
+  font-family: $font-family-sans;
+  font-weight: bold;
+  font-style: normal;
+
+  i {
+    font-family: $font-family-sans;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+
+i {
+  font-size: $h2-font-size;
+}
+
+
+}
+h2,
+.h2 {
+    font-size: $h2-font-size;
+
+    i {
+      font-size: $h3-font-size
+    }
+}
+h3,
+.h3 {
+    font-size: $h3-font-size;
+
+    i {
+      font-size: $h4-font-size
+    }
+}
+h4,
+.h4 {
+    font-size: $h4-font-size;
+
+    i {
+      font-size: $h5-font-size
+    }
+}
+h5,
+.h5 {
+    font-size: $h5-font-size;
+
+    i {
+      font-size: $h6-font-size
+    }
+}
+h6,
+.h6 {
+    font-size: $h6-font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+
+    i {
+      font-size: $h6-font-size
+    }
+}
+
+p {
+  font-size: $font-size;
+  font-weight: 300;
+  color: $font-color;
+  font-family: $font-family-sans;
+  margin: $font-margin;
+
+  em{
+    font-weight: bold;
+    font-style: italic;
+    line-height: normal;
+  }
+
+}

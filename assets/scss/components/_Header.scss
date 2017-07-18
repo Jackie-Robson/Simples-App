@@ -1,0 +1,23 @@
+header{
+	background-color: rgba(0,0,0,.1);
+  margin:0;
+	padding: 10px 100px 5px 100px;
+
+	nav{
+		width:100%;
+    li{
+    display: block;
+    cursor: pointer;
+    font-size: $h4-font-size
+    }
+  }
+
+  h1{
+		// margin: 20px 30px;
+    font-family: $font-family-sans;
+    color: black;
+  }
+  hr{
+    margin-bottom: 0;
+  }
+}

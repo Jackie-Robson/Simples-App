@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./app/modules/tags/components/index.js?d59d"],"names":["Tag"],"mappings":";;;;;;;;;;;;;AAAA;;;;;;QAICA,G","file":"0.b4bb761ccb790cf471aa.hot-update.js","sourcesContent":["import Tag from './Tag'\n\n\nexport  {\n\tTag,\n\n}\n\n\n\n// WEBPACK FOOTER //\n// ./app/modules/tags/components/index.js"],"sourceRoot":""}
